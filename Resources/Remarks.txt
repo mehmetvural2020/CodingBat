@@ -1,0 +1,10 @@
+Remarks :
+Week 1 : Warmup-2: altPairs, has271.
+Week 2 Saturday, MAY 29 : Warmup-1 : sleepIn, monkeyTrouble, sumDouble, diff21, parrotTrouble.
+       Sunday, MAY 30 : Warmup-2  : StringTimes, FrontTimes, CountXX.
+
+Week 3 JUNE 5 and 6 :
+        Array-1: unlucky1
+        Logic-1: cigarParty, caughtSpeeding, withoutDoubles
+        Logic-2: blackjack, makeChocolate
+        String-2: sameStarChar, starOut, endOther, xyBalance, xyzMiddle, xyzThere, zipZap
