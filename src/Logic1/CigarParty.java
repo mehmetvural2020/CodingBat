@@ -10,6 +10,13 @@ public class CigarParty {
     cigarParty(50, false) → true
     cigarParty(70, true) → true*/
 
+    private static boolean cigarParty(int i, boolean b) {
+
+
+        return true;
+    }
+
+
     public static void main(String[] args) {
         boolean result = cigarParty(30, false);
         System.out.println(result);
@@ -19,11 +26,15 @@ public class CigarParty {
         cigarParty(70, true);   // → true*/
     }
 
-    public static boolean cigarParty(int cigars, boolean isWeekend) {
-        boolean result = false;
-        if((!isWeekend) & (cigars >= 40) & (cigars <= 60)) result = true;
-        if((isWeekend) & (cigars >= 40)) result = true;
 
-        return result;
-    }
+
+
+
+//    public static boolean cigarParty(int cigars, boolean isWeekend) {
+//        boolean result = false;
+//        if((!isWeekend) & (cigars >= 40) & (cigars <= 60)) result = true;
+//        if((isWeekend) & (cigars >= 40)) result = true;
+//
+//        return result;
+//    }
 }

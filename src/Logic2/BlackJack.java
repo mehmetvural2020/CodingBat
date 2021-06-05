@@ -12,24 +12,32 @@ public class BlackJack {
     blackjack(21, 19) → 21
     blackjack(19, 22) → 19*/
 
+    private static int blackjack(int i, int i1) {
+
+
+
+        return 0;
+    }
+
     public static void main(String[] args) {
         int result = blackjack(19, 21);
         System.out.println(result);
     }
 
-    public static int blackjack(int a, int b) {
-        int result;
 
-        if(a>21) result = b;
-        else if (b> 21) result = a;
-        else if(21-a < 21-b) result = a;
-        else result = b;
-
-        if((a == 21) ||(b == 21)) result = 21;
-
-        if(a>21 & b>21) result = 0;
-
-        return result;
-    }
+//    public static int blackjack(int a, int b) {
+//        int result;
+//
+//        if(a>21) result = b;
+//        else if (b> 21) result = a;
+//        else if(21-a < 21-b) result = a;
+//        else result = b;
+//
+//        if((a == 21) ||(b == 21)) result = 21;
+//
+//        if(a>21 & b>21) result = 0;
+//
+//        return result;
+//    }
 
 }

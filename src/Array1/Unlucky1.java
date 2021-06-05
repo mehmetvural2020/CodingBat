@@ -7,7 +7,11 @@ public class Unlucky1 {
     unlucky1([1, 3, 4, 5]) → true
     unlucky1([2, 1, 3, 4, 5]) → true
     unlucky1([1, 1, 1]) → false*/
+    private static boolean unlucky1(int[] numbers) {
 
+
+        return true;
+    }
     public static void main(String[] args) {
         int[] numbers = {};
         boolean result = unlucky1(numbers);//→ true
@@ -16,18 +20,21 @@ public class Unlucky1 {
 //        unlucky1([1, 1, 1]); //→ false
     }
 
-    public static boolean unlucky1(int[] nums) {
-        boolean result = false;
 
-        if(nums.length < 3) result = false;
-        else if((nums[0] == 1 & nums[1] == 3 ) || (nums[1] == 1 & nums[2] == 3 )
-                || (nums[nums.length - 1] == 3 & nums[nums.length - 2] == 1 ))
-        result = true;
 
-        if(nums.length < 2) result = false;
-        else if((nums.length == 2  ) & (nums[0] == 1 & nums[1] == 3 )) result = true;
 
-        return result;
-    }
+//    public static boolean unlucky1(int[] nums) {
+//        boolean result = false;
+//
+//        if(nums.length < 3) result = false;
+//        else if((nums[0] == 1 & nums[1] == 3 ) || (nums[1] == 1 & nums[2] == 3 )
+//                || (nums[nums.length - 1] == 3 & nums[nums.length - 2] == 1 ))
+//        result = true;
+//
+//        if(nums.length < 2) result = false;
+//        else if((nums.length == 2  ) & (nums[0] == 1 & nums[1] == 3 )) result = true;
+//
+//        return result;
+//    }
 
 }

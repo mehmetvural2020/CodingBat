@@ -10,16 +10,28 @@ public class WithoutDoubles {
     withoutDoubles(2, 3, true) → 5
     withoutDoubles(3, 3, true) → 7
     withoutDoubles(3, 3, false) → 6*/
+
+    private static int withoutDoubles(int i, int i1, boolean b) {
+
+
+
+        return 0;
+    }
+
+
     public static void main(String[] args) {
         int result = withoutDoubles(2, 3, true);
         System.out.println(result);
     }
 
-    public static int withoutDoubles(int die1, int die2, boolean noDoubles) {
-        int result = die1 + die2;
-        if((die1 == die2) & (die1 == 6) & (noDoubles)) result = die1+1;
-        else if((die1 == die2) & (noDoubles)) result += 1;
 
-        return result;
-    }
+
+
+//    public static int withoutDoubles(int die1, int die2, boolean noDoubles) {
+//        int result = die1 + die2;
+//        if((die1 == die2) & (die1 == 6) & (noDoubles)) result = die1+1;
+//        else if((die1 == die2) & (noDoubles)) result += 1;
+//
+//        return result;
+//    }
 }
