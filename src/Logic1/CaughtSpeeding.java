@@ -12,17 +12,6 @@ public class CaughtSpeeding {
     caughtSpeeding(65, false) → 1
     caughtSpeeding(65, true) → 0*/
 
-    public static int caughtSpeeding(int i, boolean b) {
-
-
-
-        return 0;
-    }
-
-
-
-
-
     public static void main(String[] args) {
         caughtSpeeding(60, false); // → 0
 
@@ -32,27 +21,44 @@ public class CaughtSpeeding {
 
 
 
-//    public static int caughtSpeeding(int speed, boolean isBirthday) {
-//        int result = 0;
-//        int birthday = 0;
-//        if(isBirthday) birthday = 1;
+    public static int caughtSpeeding(int speed, boolean isBirthday) {
+        int result = 0;
+        int birthday = 0;
+        if(isBirthday) birthday = 1;
+
+        switch (birthday){
+            case 0 :
+                if(speed <= 60) result =0;
+                else if(speed <= 80) result = 1;
+                else result = 2;
+                break;
+            case 1 :
+                if(speed <= 65) result =0;
+                else if(speed <= 85) result = 1;
+                else result = 2;
+                break;
+        }
+
+//        switch (birthday) {
+//            case 0:
+//                if (speed >= 81)
+//                    return 2;
+//                else if (speed >= 61)
+//                    return 1;
+//                else
+//                    return 0;
 //
-//        switch (birthday){
-//            case 0 :
-//                if(speed <= 60) result =0;
-//                else if(speed <= 80) result = 1;
-//                else result = 2;
-//                break;
-//            case 1 :
-//                if(speed <= 65) result =0;
-//                else if(speed <= 85) result = 1;
-//                else result = 2;
-//                break;
-//            default:
-//                throw new IllegalStateException("Unexpected value: " + birthday);
+//            case 1:
+//                if (speed >= 86)
+//                    return 2;
+//                else if (speed >= 66)
+//                    return 1;
+//                else
+//                    return 0;
 //        }
-//        return result;
-//    }
+
+        return result;
+    }
 
 
 
