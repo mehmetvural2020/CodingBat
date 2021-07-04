@@ -6,22 +6,22 @@ public class WithoutDoubles {
         increment one die to the next value,
     wrapping around to 1 if its value was 6.
 
-
     withoutDoubles(2, 3, true) → 5
     withoutDoubles(3, 3, true) → 7
     withoutDoubles(3, 3, false) → 6*/
 
-    private static int withoutDoubles(int i, int i1, boolean b) {
+    public static int withoutDoubles(int die1, int die2, boolean noDoubles) {
+        if((die1 == 6) & (die2 == 6) & noDoubles) return 7;
+        if((die1 == die2 ) & noDoubles ) return die1 + die2 + 1;
 
-
-
-        return 0;
+        return die1 + die2;
     }
 
 
     public static void main(String[] args) {
-        int result = withoutDoubles(2, 3, true);
-        System.out.println(result);
+        System.out.println(withoutDoubles(2, 3, true));
+        System.out.println(withoutDoubles(3, 3, true));
+        System.out.println(withoutDoubles(3, 3, false));
     }
 
 

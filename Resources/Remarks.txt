@@ -10,8 +10,13 @@ Week 3  JUNE 5 :  Warmup-1 Questions 6-10
         JUNE 6 : Array-1: unlucky1 +,
                  Logic-1: cigarParty+, caughtSpeeding+,
 
-Week 4  JUNE 12 :  Warmup-1 Questions 11-16
-        JUNE 13 :
-                    Logic-1: withoutDoubles
-                    Logic-2: blackjack, makeChocolate ...
+Week 4  JUNE 12 :  Warmup-1 Questions 11-14
+        JUNE 13 :  Logic-1: withoutDoubles
+                   Logic-2: blackjack,
+
+
+Week 5 JUNE 19 :    Warmup-1 Questions 15-20(LoneTeen)
+Week 5  JUNE 20 :
+                    Logic-2: makeChocolate ...
                     String-2: sameStarChar, starOut, endOther, xyBalance, xyzMiddle, xyzThere, zipZap
+

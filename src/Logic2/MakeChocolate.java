@@ -15,6 +15,20 @@ public class MakeChocolate {
     }
 
     public static int makeChocolate(int small, int big, int goal) {
+
+
+
+        return 0;
+    }
+
+
+
+
+
+
+
+
+    public static int makeChocolate1(int small, int big, int goal) {
         int result, bigx = 0;
         int n = 0;
         // 5x + n = goal
