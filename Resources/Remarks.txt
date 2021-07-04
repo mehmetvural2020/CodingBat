@@ -15,7 +15,7 @@ Week 4  JUNE 12 :  Warmup-1 Questions 11-14
                    Logic-2: blackjack,
 
 
-Week 5 JUNE 19 :    Warmup-1 Questions 15-20(LoneTeen)
+Week 5 JUNE 19 :    Warmup-1 Questions 15-20(WarmUp1.LoneTeen)
 Week 5  JUNE 20 :
                     Logic-2: makeChocolate ...
                     String-2: sameStarChar, starOut, endOther, xyBalance, xyzMiddle, xyzThere, zipZap
