@@ -15,11 +15,31 @@ public class LastDigit {
     }
 
     public boolean lastDigit(int a, int b) {
-        if(a % 10 == b % 10) return true;
-        return false;
+//        if(a % 10 == b % 10) return true;
+//
+//        return false;
 
-        // Short Solution :
-//        return (a % 10 == b % 10);
+        return (a % 10 == b % 10);
+
     }
+
+
+
+
+
+
+
+
+
+
+
+//
+//    public boolean lastDigit(int a, int b) {
+//        if(a % 10 == b % 10) return true;
+//        return false;
+//
+//        // Short Solution :
+////        return (a % 10 == b % 10);
+//    }
 
 }

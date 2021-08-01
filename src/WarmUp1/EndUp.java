@@ -13,12 +13,24 @@ public class EndUp {
 
     }
 
+
     public String endUp(String str) {
         if(str.length()<3) return str.toUpperCase();
         else return str.substring(0,str.length()-3) + str.substring(str.length()-3).toUpperCase();
-// Short Solution :
-//        return (str.length()<3) ? str.toUpperCase() : str.substring(0,str.length()-3) + str.substring(str.length()-3).toUpperCase();
-
     }
+
+
+
+
+
+
+
+//    public String endUp(String str) {
+//        if(str.length()<3) return str.toUpperCase();
+//        else return str.substring(0,str.length()-3) + str.substring(str.length()-3).toUpperCase();
+//// Short Solution :
+////        return (str.length()<3) ? str.toUpperCase() : str.substring(0,str.length()-3) + str.substring(str.length()-3).toUpperCase();
+//
+//    }
 
 }

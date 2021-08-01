@@ -12,14 +12,28 @@ public class EveryNth {
     public static void main(String[] args) {
 
     }
-
     public static String everyNth(String str, int n) {
         String newStr = "";
-        for(int i = 0; i < str.length(); i=i+n){
-            newStr = newStr + str.charAt(i);  //str.substring(i,i+1);
+        for(int i = 0; i < str.length(); i= i + n){
+            newStr = newStr + str.charAt(i);
         }
 
         return newStr;
     }
+
+
+
+
+
+
+
+//    public static String everyNth(String str, int n) {
+//        String newStr = "";
+//        for(int i = 0; i < str.length(); i=i+n){
+//            newStr = newStr + str.charAt(i);  //str.substring(i,i+1);
+//        }
+//
+//        return newStr;
+//    }
 
 }

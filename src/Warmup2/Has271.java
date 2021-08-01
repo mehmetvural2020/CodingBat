@@ -17,13 +17,21 @@ public class Has271 {
         System.out.println(result);
     }
     public static boolean has271(int[] nums){
-        for(int i = 0; i< nums.length-2; i++){
-            if((nums[i+1]==nums[i]+5) && (Math.abs(nums[i+2]-(nums[i]-1))<=2))
-                return true;
+        for(int i = 0; i < nums.length-2; i++){
+            if((nums[i+1] == nums[i] + 5) && (Math.abs(nums[i+2] - (nums[i]-1)) <=2)) return true;
+            //  2 7 -1  //2+5  // 2-1=1  sapma orani -+2  1-2=-1 yada 1 + 2=+3
         }
-
         return false;
     }
+
+
+
+
+
+
+
+
+
 
 //public static boolean has271(int[] nums){
 //        // Iterate < length-2, so can use i+1 and i+2 in the loop.
