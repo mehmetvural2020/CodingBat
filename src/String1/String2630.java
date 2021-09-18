@@ -85,14 +85,93 @@ public class String2630 {
 
     deFront("Hello") → "llo"
     deFront("java") → "va"
-    deFront("away") → "aay"*/
+    deFront("aw ay") → "aay"*/
 
     public static String deFront(String str) {
+//        String newStr = "";
+//        if(str.charAt(0)=='a')
+//            newStr += 'a';        ///  a
+//        if(str.charAt(1)=='b')
+//           newStr += 'b';
+//        newStr += str.substring(2);   /// aay
 
+        // Solution 2 :
+        String  newStr = str.substring(2);
+        if(str.charAt(1)=='b') newStr = 'b' + newStr;
+        if(str.charAt(0)=='a') newStr = 'a' + newStr;
+
+        return newStr;
+    }
+
+    /*Given a string and a second "word" string, we'll say that the word matches the string
+    if it appears at the front of the string, except its first char does not need to match exactly.
+     On a match, return the front of the string, or otherwise return the empty string.
+     So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip".
+     The word will be at least length 1.
+
+
+    startWord("hippo", "hi") → "hi"
+    startWord("hippo", "xip") → "hip"
+    startWord("h", "i") → "h"*/
+
+    public static String startWord(String str, String word) {
+        // if(str.length()>1 && str.substring(1,word.length()).equals(word.substring(1))) return str.substring(0,word.length());
+        // if(str.length()==1 && word.length()==1) return str;
+
+        // return "";
+
+        //Solution 2 :
+        if(str.length()>1 && str.substring(1,word.length()).startsWith(word.substring(1))) return str.substring(0,word.length());
+        if(str.length()==1 && word.length()==1) return str;
+
+        return "";
+    }
+
+    /*Given a string, if the first or last chars are 'x',
+    return the string without those 'x' chars, and otherwise return the string unchanged.
+
+
+    withoutX("xHix") → "Hi"
+    withoutX("xHi") → "Hi"
+    withoutX("Hxix") → "Hxi"*/
+
+    public static String withoutX(String str) {
+        if(str.length()>0 && str.charAt(0)=='x') str = str.substring(1);
+        if(str.length()>=1 && str.charAt(str.length()-1)=='x') str = str.substring(0,str.length()-1);
         return str;
     }
 
+    /*Given a string, if one or both of the first 2 chars is 'x',
+    return the string without those 'x' chars, and otherwise return the string unchanged.
+    This is a little harder than it looks.
 
+    withoutX2("xHi") → "Hi"
+    withoutX2("Hx i") → "Hi"
+    withoutX2("Hi c") → "Hi"*/
+//    Hello   -> He     llo
+
+    public static String withoutX2(String str) {
+//        String newStr = "";
+//
+//        if(str.length()>1 && str.charAt(1) != 'x') newStr = str.charAt(1) + newStr;  // e + llo
+//
+//        if(str.length()>0 && str.charAt(0) != 'x' ) newStr = str.charAt(0) + newStr;  // H + ello
+//
+//        if(str.length()>2) newStr = newStr + str.substring(2); // llo
+//                return newStr;  // Hello
+
+        // Solution 2 :
+        String word = "";
+        for(int i=0; i<str.length(); i++)
+        {
+            if((i==0||i==1) && str.charAt(i)=='x')
+                continue;
+            word += str.charAt(i);  // 0-C 1-o 2-d   3-i  4-n...
+        }
+        return word;
+
+
+    }
 
 
 

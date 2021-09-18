@@ -22,22 +22,33 @@ public class CaughtSpeeding {
 
 
     public static int caughtSpeeding(int speed, boolean isBirthday) {
-        int result = 0;
-        int birthday = 0;
-        if(isBirthday) birthday = 1;
+//        Solution : 1
+        if(isBirthday) speed = speed - 5;
 
-        switch (birthday){
-            case 0 :
-                if(speed <= 60) result =0;
-                else if(speed <= 80) result = 1;
-                else result = 2;
-                break;
-            case 1 :
-                if(speed <= 65) result =0;
-                else if(speed <= 85) result = 1;
-                else result = 2;
-                break;
-        }
+        if(speed<=60) return 0;
+        else if(speed<=80) return 1;
+        else return 2;
+
+//    Solution 2 :
+
+//        int result = 0;
+//        int birthday = 0;
+//        if(isBirthday) birthday = 1;
+//
+//        switch (birthday){
+//            case 0 :
+//                if(speed <= 60) result =0;
+//                else if(speed <= 80) result = 1;
+//                else result = 2;
+//                break;
+//            case 1 :
+//                if(speed <= 65) result =0;
+//                else if(speed <= 85) result = 1;
+//                else result = 2;
+//                break;
+//        }
+
+//        Solution 3 :
 
 //        switch (birthday) {
 //            case 0:
@@ -57,7 +68,7 @@ public class CaughtSpeeding {
 //                    return 0;
 //        }
 
-        return result;
+//        return result;
     }
 
 
